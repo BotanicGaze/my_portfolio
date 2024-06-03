@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const title = "Hào Lâm | Mobile Developer From Ho Chi Minh City";
 const description = "";
-const url = "";
+const url = "https://google.com/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
