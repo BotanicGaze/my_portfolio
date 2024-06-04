@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(1024, 690),
       builder: (context, child) {
         return MaterialApp(
-          title: 'Flutter Demo',
+          title: 'Hào Lâm | Mobile Developer',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             scaffoldBackgroundColor: const Color(0xFF374151),
@@ -264,7 +264,7 @@ Despite my extensive experience, my passion for mobile development burns as brig
                   const SizedBox(height: 8),
                   const Row(
                     children: [
-                      Icon(Icons.local_activity_outlined),
+                      // Icon(Icons.done_outlined),
                       Text("Available for new projects")
                     ],
                   )
@@ -272,30 +272,30 @@ Despite my extensive experience, my passion for mobile development burns as brig
               ),
             ),
             const SizedBox(width: 180),
-            SizedBox(
-              height: 360,
-              width: 320,
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: Align(
-                      alignment: Alignment.bottomRight,
-                      child: Container(
-                          width: 280,
-                          height: 320,
-                          color: const Color(0xFF374151)),
-                    ),
-                  ),
-                  Positioned.fill(
-                    child: Align(
-                      alignment: Alignment.topLeft,
-                      child: Container(
-                          width: 280, height: 320, color: Colors.amber),
-                    ),
-                  ),
-                ],
-              ),
-            )
+            // SizedBox(
+            //   height: 360,
+            //   width: 320,
+            //   child: Stack(
+            //     children: [
+            //       Positioned.fill(
+            //         child: Align(
+            //           alignment: Alignment.bottomRight,
+            //           child: Container(
+            //               width: 280,
+            //               height: 320,
+            //               color: const Color(0xFF374151)),
+            //         ),
+            //       ),
+            //       Positioned.fill(
+            //         child: Align(
+            //           alignment: Alignment.topLeft,
+            //           child: Container(
+            //               width: 280, height: 320, color: Colors.amber),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // )
           ],
         ),
       ),
