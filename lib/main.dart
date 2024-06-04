@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_portfolio/views/get_in_touch.dart';
 import 'package:my_portfolio/views/works.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'views/experiences.dart';
 import 'views/skill.dart';
@@ -100,7 +101,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Text("Contact"),
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              launchUrl(Uri.parse(
+                  "https://www.topcv.vn/xem-cv/A1dTVwYBUVQCAQMCDlUGVgRcBlADVwEBAF0EDA1284?ta_source=EditCVInAfterSaveCV"));
+            },
             child: const Text("Download"),
           ),
         ],
