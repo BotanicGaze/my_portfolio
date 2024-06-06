@@ -14,6 +14,7 @@ class Skill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xFF111827),
+      width: double.infinity,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 96),
         child: Column(

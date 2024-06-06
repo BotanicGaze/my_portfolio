@@ -103,52 +103,54 @@ class _MyHomePageState extends State<MyHomePage> {
           ElevatedButton(
             onPressed: () {
               launchUrl(Uri.parse(
-                  "https://www.topcv.vn/xem-cv/A1dTVwYBUVQCAQMCDlUGVgRcBlADVwEBAF0EDA1284?ta_source=EditCVInAfterSaveCV"));
+                  "https://www.topcv.vn/xem-cv/A1dTVwYBUVQCAQMCDlUGVgRcBlADVwEBAF0EDA1284"));
             },
             child: const Text("Download"),
           ),
         ],
       ),
-      body: ListView(
+      body: SingleChildScrollView(
         controller: controller,
-        children: [
-          AutoScrollTag(
-            index: 0,
-            controller: controller,
-            key: const ValueKey(0),
-            child: const Introduction(),
-          ),
-          // AutoScrollTag(
-          //   index: 1,
-          //   controller: controller,
-          //   key: const ValueKey(1),
-          //   child: const AboutMe(),
-          // ),
-          AutoScrollTag(
-            index: 2,
-            controller: controller,
-            key: const ValueKey(2),
-            child: const Skill(),
-          ),
-          AutoScrollTag(
-            index: 3,
-            controller: controller,
-            key: const ValueKey(3),
-            child: const Experience(),
-          ),
-          AutoScrollTag(
-            index: 4,
-            controller: controller,
-            key: const ValueKey(4),
-            child: const Work(),
-          ),
-          AutoScrollTag(
-            index: 5,
-            controller: controller,
-            key: const ValueKey(5),
-            child: const GetInTouch(),
-          ),
-        ],
+        child: Column(
+          children: [
+            AutoScrollTag(
+              index: 0,
+              controller: controller,
+              key: const ValueKey(0),
+              child: const Introduction(),
+            ),
+            // AutoScrollTag(
+            //   index: 1,
+            //   controller: controller,
+            //   key: const ValueKey(1),
+            //   child: const AboutMe(),
+            // ),
+            AutoScrollTag(
+              index: 2,
+              controller: controller,
+              key: const ValueKey(2),
+              child: const Skill(),
+            ),
+            AutoScrollTag(
+              index: 3,
+              controller: controller,
+              key: const ValueKey(3),
+              child: const Experience(),
+            ),
+            AutoScrollTag(
+              index: 4,
+              controller: controller,
+              key: const ValueKey(4),
+              child: const Work(),
+            ),
+            AutoScrollTag(
+              index: 5,
+              controller: controller,
+              key: const ValueKey(5),
+              child: const GetInTouch(),
+            ),
+          ],
+        ),
       ),
     );
   }
